@@ -1,0 +1,34 @@
+/**
+my submission notes
+1. I didn't understand what even the syntax of scanf meant
+2. u write the syntax code for respective data type like "%d" for int;  "%ld" for long inside double quotes
+   then you have to write the respective variable for which you allocate your input into
+3. https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm    for more info on the subject
+4. messed up the printf syntax as well. there was basically no understanding for me on matter of "how to add a newline in between the outputs"
+   and "how to selectively choose how much digits of precision you need in your double or float output"
+5. spent 30 mins figuring out how to solve this on a shitty youtube tutorial of a guy with a big ass monitor and small font
+**/
+
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    // Complete the code.
+    int i;
+    long l;
+    char c;
+    float f;
+    double d;
+    scanf("%d %ld %c %f %lf" , &i, &l, &c, &f, &d);
+    printf("%d\n%ld\n%c\n%.3f\n%.9lf\n", i,l,c,f,d);
+
+    return 0;
+}
+
+
+//this is what my submission looked like, its literally the copy of editorial, but i had the exact same variable names in my mind as well
+//i messed in line 24, wrote "&lf" instead of "%lf" , got really confused and frustrated
+//apparently, you shouldn't give spaces after writing the "\n", it just messes up the code (its wrong basically)
+//now i am depressed, i should go do my homework
