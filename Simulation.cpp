@@ -20,8 +20,8 @@ int main() {
 	int t, a, b, g;
 	cin >> t;
 	while (t--) {
-		cin >> a >> b >> g;
-		a--; b--; g--;
+		cin >> a >> b >> g;    //reading the input
+		a--; b--; g--;		// zero offsetting the indexes		
 		swap(shellpos[a], shellpos[b]);
 		counter[shellpos[g]]++;   //why is this so hard to understand
  	}
