@@ -15,7 +15,7 @@ int main() {
 	vi counter(3);
 	vi  shellpos(3);
 	for (int i = 0; i < 3; i++) {
-		shellpos[i	] = i;
+		shellpos[i] = i;
 	}
 	int t, a, b, g;
 	cin >> t;
